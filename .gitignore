@@ -1,0 +1,17 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# OS
+.DS_Store
+
+# Loop runtime artifacts (may contain notifications, proposed fixes, secrets)
+.loop/
+*.log
+
+# Env / secrets
+.env
+.env.*
+*.key
+*.pem
