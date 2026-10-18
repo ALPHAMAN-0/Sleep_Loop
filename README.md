@@ -4,6 +4,18 @@ A closed, self-learning loop that repairs a broken `slugify()` while you sleep,
 learns from every failed attempt, and pings you to merge instead of shipping on
 its own. `python3 loop.py` and watch it work.
 
+## Architecture / How it Works
+
+```mermaid
+flowchart LR
+    A[User] --> B[Sleep Loop]
+    B --> C{Logic}
+    C --> D[(Data)]
+    C --> E[Output]
+    D --> C
+```
+
+
 ## What you just saw
 - Run 1: failed 3 strategies, turned each into a permanent rule, passed on attempt 4.
 - Run 2: recovered those 3 dead ends from `RULES.md` and passed on attempt 1.
