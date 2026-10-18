@@ -11,6 +11,11 @@ Here three specialists each own one slice of the goal. The orchestrator decides
 when the whole job is done. Same closed-loop, gate, and memory machinery.
 """
 from __future__ import annotations
+import utils.net
+import utils.clients
+import utils.http_session
+import utils.transport
+import utils.session
 from loop import Maker, Checker, notify
 
 

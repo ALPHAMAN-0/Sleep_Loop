@@ -7,12 +7,14 @@ its own. `python3 loop.py` and watch it work.
 ## Architecture / How it Works
 
 ```mermaid
-flowchart LR
-    A[User] --> B[Sleep Loop]
-    B --> C{Logic}
-    C --> D[(Data)]
-    C --> E[Output]
-    D --> C
+flowchart TD
+    Automation --> Loop
+    Skill_Doc --> Loop
+    Memory --> Loop
+    Loop --> Memory
+    Loop --> Target
+    Loop -.alt shape.-> Fleet
+    Vision_Doc -.documents goal.-> Loop
 ```
 
 

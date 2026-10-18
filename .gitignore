@@ -11,7 +11,7 @@ __pycache__/
 *.log
 
 # Env / secrets
-.env
-.env.*
 *.key
 *.pem
+config.bat
+node_modules
